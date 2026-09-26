@@ -2,6 +2,8 @@
 
 这是一份查阅地图，不是学习测验，也不要求按固定天数完成。每章正文都可以从 [完整目录](README.md) 打开。
 
+**首次阅读**先看[阅读指南](READING_GUIDE.md)。各章新增的学习卡说明第一遍和第二遍分别读什么；公式看不懂时，可直接查[数学与 NumPy 工具箱](notes/00-math-and-numpy.md)。
+
 ## 1. 先建立训练的完整链条
 
 [第二章](notes/02-image-classification.md)定义分数与损失，[第三章](notes/03-regularization-optimization.md)说明更新方向和步幅，[第四章](notes/04-neural-networks-backprop.md)说明梯度如何实际算出来。
@@ -53,9 +55,13 @@ CNN 与 Transformer 都在学习表示，但连接方式、归纳偏置与计算
 
 | 遇到的困惑 | 回到哪里 |
 |---|---|
+| 一个向量为什么既叫 100 维，又是“一维数组”？ | [工具箱：数组与形状](notes/00-math-and-numpy.md#1-标量向量矩阵张量) |
+| 为什么 train_sq 不用 keepdims，转置怎么用？ | [工具箱：axis 与广播](notes/00-math-and-numpy.md#5-axis-与-keepdims到底对谁求和) |
+| 距离图中的亮行、亮列是什么意思？ | [第二章：距离矩阵](notes/02-image-classification.md#从一个距离到距离矩阵) |
 | Softmax 为什么减最大值？ | [数值稳定专题](notes/02-softmax-numerical-stability.md) |
 | λ、学习率、梯度有什么区别？ | [第三章](notes/03-regularization-optimization.md) |
 | 为什么反传要转置、偏置求和？ | [第四章](notes/04-neural-networks-backprop.md) |
+| 截图里的 h*(1-h) 和 grad_w1 是怎么来的？ | [NumPy 网络逐行讲解](notes/04-numpy-network-walkthrough.md) |
 | 通道、卷积核、参数量怎么数？ | [第五章](notes/05-convolutional-networks.md) |
 | train/eval 为什么预测不同？ | [第六章](notes/06-cnn-architectures.md) |
 | LSTM 的 h 和 c 有什么不同？ | [第七章](notes/07-recurrent-networks.md) |
