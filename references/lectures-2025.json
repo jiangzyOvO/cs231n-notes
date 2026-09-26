@@ -1,0 +1,156 @@
+[
+  {
+    "lecture": 4,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_4.pdf",
+    "pages": 147,
+    "sha256": "906b09877d36e121705ee89576aff8291ba9d70ea15713753c9a734894ca20b8",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 5,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_5.pdf",
+    "pages": 141,
+    "sha256": "ac0633b77c5626f03bcbb9df47b816d2710275dca44e9b12e01ec11d34fde91d",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 6,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_6.pdf",
+    "pages": 97,
+    "sha256": "db08ba91551d99531198bb6b28ccd33dc08b6d16e61a678fd4cb7b213eb8a4c5",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 7,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_7.pdf",
+    "pages": 124,
+    "sha256": "373a16005af3cef343c7596b1b7f175194df3e33e1d23f69b2ccec3a0a5a0242",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 8,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_8.pdf",
+    "pages": 122,
+    "sha256": "09a099532dd251043fb23132e989d6c18ab4bc64ef57e97d60e9d25949c8a1cb",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 9,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_9.pdf",
+    "pages": 178,
+    "sha256": "65bfe8fb04d422dd6dc037a120f2c742421e507a2c66aa32b24e3fe8291835b9",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 10,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_10.pdf",
+    "pages": 103,
+    "sha256": "97459e980d0382fd925b6b47822d917362257cc3656bc1445aef916cdcced2af",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 11,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_11.pdf",
+    "pages": 148,
+    "sha256": "ec89aa8c20b5a0a94a7ac9b890b2e1a9f198e09b60d986ff78e3fb2a88dea27d",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 12,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_12.pdf",
+    "pages": 115,
+    "sha256": "bc6e07e06fc46098aa1b2a276265ba5fdb31c52e709a711662b5932734f28c58",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 13,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_13.pdf",
+    "pages": 116,
+    "sha256": "8bf0be30a71f351cc458177fb7e43c335e6141ff8def2b45c08e6155975fbb68",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 14,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_14.pdf",
+    "pages": 123,
+    "sha256": "f6092349f3dd59e0d2c023ee03ce95605841fd49a2b76c729a5b0b3dfa53be6b",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 15,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_15.pdf",
+    "pages": 105,
+    "sha256": "15848a12f2962dbe6aa3c0ad69e1148a7ec8c3cd13d603f8572b844104ffae6a",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 16,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_16.pdf",
+    "pages": 148,
+    "sha256": "447fe87ad8a0f5389d4f04920def5304faf843c261d26fa228772f42433972ad",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 17,
+    "url": "https://cs231n.stanford.edu/slides/2025/lecture_17.pdf",
+    "pages": 103,
+    "sha256": "349b77958e6dac51f943adbcc4fd61f5de8a34f29a3b33d9e4dc0972eb72781e",
+    "checked_on": "2026-09-26",
+    "basis": "official PDF; not a full video transcript"
+  },
+  {
+    "lecture": 18,
+    "url": "https://www.bilibili.com/video/BV1aXhJ64EmW/?p=18",
+    "official_video": "https://www.youtube.com/watch?v=g8UaBfj6Sh8",
+    "checked_on": "2026-09-26",
+    "basis": "33 video-frame and visible-subtitle samples; no full transcript",
+    "sample_seconds": [
+      60,
+      180,
+      300,
+      420,
+      540,
+      660,
+      780,
+      900,
+      1020,
+      1140,
+      1260,
+      1380,
+      1500,
+      1620,
+      1740,
+      1860,
+      1980,
+      2100,
+      2220,
+      2340,
+      2460,
+      2580,
+      2700,
+      2820,
+      2940,
+      3060,
+      3180,
+      3300,
+      3420,
+      3540,
+      3660,
+      3780,
+      3900
+    ]
+  }
+]
