@@ -2,6 +2,8 @@
 
 > CS231n 2025 Lecture 8，2025-04-24，Justin Johnson。以官方课件为主，原创算例逐项定义形状。前置：[RNN](07-recurrent-networks.md)、[矩阵反传](04-neural-networks-backprop.md)。
 
+> **从零入口**：[先完整计算两个 token 的注意力](../beginner/07-attention.md)。这里保留课程详细内容；先读小例子，再回本章补推导。
+
 ## 本章学习卡
 
 > **核心问题：当前位置能否直接从其他位置读取自己需要的信息？**

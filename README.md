@@ -1,22 +1,41 @@
-# CS231n 学习笔记
+# CS231n 中文学习笔记
 
-**从直觉出发，跟着例子计算，再读懂公式与代码。** 这套中文笔记按 Stanford CS231n Spring **2025** 的实际课程材料整理，适合有一些 Python 和数学基础、刚开始学习视觉与神经网络的读者。
+**先用小例子理解，再把公式、形状和代码连起来。** 按 Stanford CS231n **2025** 课程材料整理，适合刚开始学习神经网络和计算机视觉的读者。
 
-**18 章均已整理，并于 2026-09-26 完成初学者阅读重组。** 每章有学习卡、分层阅读路线、关键概念解释和复习卡；保留专业公式、来源与适用条件。笔记完成不代表学习完成，可以按自己的进度阅读。
+2026-09-27 根据完整一轮陪学讲解重新组织：新增 **10 个从零学习单元、3 张原创图和可运行算例**，并连接到原有 18 讲详细笔记。入门导览完成不等于已经掌握所有课程推导与作业。
 
 ## 从这里开始
 
-| 阅读需求 | 入口 |
+**第一次学习，打开 [从零学习路线](beginner/README.md)，然后从 [01 图像、分数与损失](beginner/01-data-and-prediction.md) 顺着读。** 每一单元都先解释为什么需要这个概念，再手算，最后连接公式和后续内容。
+
+| 你的需要 | 阅读入口 |
 |---|---|
-| **第一次打开这套笔记** | [初学者阅读指南](READING_GUIDE.md)：怎样读两遍，哪些推导可以稍后再看 |
-| **看不懂数组、矩阵或公式符号** | [数学与 NumPy 工具箱](notes/00-math-and-numpy.md)：求和、矩阵乘法、广播、偏导 |
-| 不明白图片怎样成为模型输入 | [图片如何变成数字](notes/00-getting-started.md) |
-| 想复习某个概念 | [全课程复习路线与概念索引](REVIEW_MAP.md) |
-| 想看目前讨论到哪里 | [学习与讨论进度](PROGRESS.md) |
+| 按这次对话从头到尾复习 | [10 单元入门路线](beginner/README.md) |
+| 看到矩阵、转置、axis、keepdims 就卡住 | [数学与 NumPy 工具箱](notes/00-math-and-numpy.md) |
+| 没弄清卷积的通道和尺寸 | [把 3×32×32 → 16×32×32 算清楚](beginner/04-convolution.md) |
+| 不明白特征图怎样成为分类结果 | [连接一个完整 CNN](beginner/05-pooling-and-cnn.md) |
+| 想跟随课程视频或查完整推导 | 下方的 [18 讲目录](#课程详细笔记) |
+| 想按具体困惑查找 | [复习地图](REVIEW_MAP.md) |
+| 想知道哪些已经讨论、哪些仍需深入 | [学习进度](PROGRESS.md) |
 
-> **阅读提示**：加粗文字与引用框标出核心结论、直觉和易错点。先看每章学习卡、图与手算，再看完整推导。符号在出现处解释，不需要先背完所有缩写。
+## 连续学习路线
 
-## 完整目录
+| 顺序 | 从一个问题开始 |
+|---|---|
+| [01 图像、分数与损失](beginner/01-data-and-prediction.md) | 像素、k-NN、距离矩阵、线性分数、Softmax 与交叉熵 |
+| [02 参数怎样学习](beginner/02-learning-and-gradients.md) | 一个权重的更新 → 偏置 → 批量平均 → 数据划分 |
+| [03 神经网络与反向传播](beginner/03-networks-and-backprop.md) | 非线性 → 标量网络 → 矩阵梯度 → 完整小代码 |
+| [04 卷积窗口](beginner/04-convolution.md) | 单窗口 → 多通道 → 填充、步长 → 参数量 |
+| [05 完整 CNN](beginner/05-pooling-and-cnn.md) | 池化 → 第二层卷积 → GAP → 十个类别分数 |
+| [06 稳定训练](beginner/06-training.md) | 初始化、学习率、BN、Dropout、过拟合与早停 |
+| [07 残差与注意力](beginner/07-attention.md) | 残差加法 → 两个 token 的 QKV 手算 → ViT |
+| [08 检测与分割](beginner/08-visual-tasks.md) | 输出由一个类别变成对象框、像素类别和掩码 |
+| [09 自监督与生成](beginner/09-self-supervision-and-generation.md) | 对比、遮挡、自回归、VAE、GAN、Flow Matching |
+| [10 完整课程地图](beginner/10-bigger-picture.md) | 时间、三维、图文、行动、算力与人的需求 |
+
+重要关系用 **粗体** 标出；提示框解释易错点。图片有文字说明，公式定义符号和形状。布局、阅读顺序及来源说明见 [阅读指南](READING_GUIDE.md)。
+
+## 课程详细笔记
 
 | 章 | 笔记 | 重点 |
 |---|---|---|
@@ -39,20 +58,22 @@
 | 17 | [机器人学习](notes/17-robot-learning.md) | 感知行动闭环、RL、规划、模仿、VLA |
 | 18 | [以人为中心的 AI](notes/18-human-centered-ai.md) | 人类视觉、偏差、隐私、辅助与真实任务 |
 
-## 两篇重点配套讲解
+## 两个重点专题
 
 - [Softmax 数值稳定性](notes/02-softmax-numerical-stability.md)：为什么减最大值，为什么还要直接计算对数损失。
-- [两层 NumPy 网络逐行讲解](notes/04-numpy-network-walkthrough.md)：截图中的 Sigmoid 网络，从每行形状、反向传播一直讲到红框中的权重更新。
+- [截图中的 NumPy 网络逐行讲解](notes/04-numpy-network-walkthrough.md)：Sigmoid、平方误差和、矩阵梯度与权重更新。与入门路线的 ReLU 算例分别标明。
 
-## 怎样使用图片与重点提示
+## 跟着复算
 
-每章的图下有读图说明，交代坐标、颜色和示意范围。重点通过 **粗体**、表格与引用块区分，兼容浅色和深色阅读主题。数学公式、图解与代码互相对应；第一遍暂缓的内容仍保留在原章内，方便第二遍复习。
+在仓库根目录运行：
 
-新补充的 5 张基础图覆盖：课程路线、广播、两层网络反传、BN/LN 统计轴、注意力读取过程。课程中已有的近邻、优化、卷积、生成与其他主题图继续保留。
+```bash
+python3 experiments/guided_examples.py
+```
 
-## 例子与配图
+只需 Python 标准库，核验本轮讲解的距离、梯度、卷积、池化、注意力、IoU 与流路径等数值。**这是教学算例，不是实际数据集训练。**
 
-在仓库根目录运行以下命令，只用 Python 标准库，无需下载数据或安装深度学习框架：
+原课程算例仍可运行：
 
 ```bash
 python3 experiments/chapter02_forward.py
@@ -60,28 +81,22 @@ python3 experiments/chapter03_optimization.py
 python3 experiments/remaining_examples.py
 ```
 
-第三个脚本复现第 4–18 章中的数值例子，包括反向传播的数值梯度核验、卷积、注意力、IoU、VAE KL、流采样和报警基率等。**它们是教学算例，不是真实数据集上的训练实验。**
-
-截图对应的网络另有完整脚本，需要 NumPy：
+截图网络的完整训练演示需要 NumPy：
 
 ```bash
 python3 experiments/sigmoid_network.py
 ```
 
-它先用小网络做数值梯度核验，再用固定随机数据演示 2000 次更新；输出的是训练损失，不是图片分类准确率。
+所有原创图存于 `assets/`，保留 PNG 与 SVG；新增配图源码为 [draw_guided.py](scripts/draw_guided.py)，使用 Matplotlib。讲解中的公式也有文字和数值解释，不依赖对话里的交互图才能复习。
 
-原创配图存于 `assets/`，同时保留 PNG 和 SVG。生成脚本存于 `scripts/`，使用 Matplotlib；部分脚本还使用 NumPy，中文字体按环境配置。本次基础图的源码为 [draw_beginner.py](scripts/draw_beginner.py)。
+## 课程版本、来源与 GitHub
 
-## 版本、引用与 GitHub
-
-- [官方 2025 课程安排](https://cs231n.stanford.edu/2025/schedule.html)
-- [用户提供的 B 站课程](https://www.bilibili.com/video/BV1aXhJ64EmW/)
+- [2025 官方课程安排](https://cs231n.stanford.edu/2025/schedule.html)
+- [用户提供的 B 站视频](https://www.bilibili.com/video/BV1aXhJ64EmW/)
 - [官方配套笔记](https://cs231n.github.io/)
 
-原先用户给出的官网链接当前显示 2026 版；所提供 B 站视频的实际内容对应 2025 版。本仓库沿用 2025，不混入另一年度的章节安排。正文按学习逻辑重组，不是讲义或视频逐字复制。
+本仓库沿用 2025 版，不混入其他年份的讲次安排。课程笔记保留原有核对范围；入门路线的类比、手算和图为整理者教学补充。第十八讲仍以视频画面和可见字幕抽查为依据，不宣称逐句观看或转录。完整说明见 [SOURCES.md](SOURCES.md)。
 
-具体核对方式、课程内容与补充解释的区别，以及第十八讲的来源限制，见 [SOURCES.md](SOURCES.md)。本次重组以既有核对材料为基础，没有新增“完整观看所有视频”的声明。
+GitHub 仓库：[jiangzyOvO/cs231n-notes](https://github.com/jiangzyOvO/cs231n-notes)。本地修改经提交、推送后同步到该仓库；在线阅读时以 GitHub 当前分支的内容为准。课程课件和视频提供来源链接，不整套转载。
 
-计划 GitHub 仓库名为 `cs231n-notes`，初始设想为 Private。**当前资料保存在本地 Git 仓库，尚未创建远程仓库或上传。** 后续公开与否由用户决定。课件、视频优先提供链接，不整套转载；作业解答与原创教学小实验分开管理。
-
-[笔记模板](templates/lecture.md) · [学习疑问](QUESTIONS.md)
+[笔记模板](templates/lecture.md) · [学习疑问](QUESTIONS.md) · [进度记录](PROGRESS.md)

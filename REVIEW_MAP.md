@@ -2,7 +2,22 @@
 
 这是一份查阅地图，不是学习测验，也不要求按固定天数完成。每章正文都可以从 [完整目录](README.md) 打开。
 
-**首次阅读**先看[阅读指南](READING_GUIDE.md)。各章新增的学习卡说明第一遍和第二遍分别读什么；公式看不懂时，可直接查[数学与 NumPy 工具箱](notes/00-math-and-numpy.md)。
+**首次阅读**先沿[10 单元从零路线](beginner/README.md)学习，再看[阅读指南](READING_GUIDE.md)。各章新增的学习卡说明第一遍和第二遍分别读什么；公式看不懂时，可直接查[数学与 NumPy 工具箱](notes/00-math-and-numpy.md)。
+
+## 按这次讲解回到具体例子
+
+| 卡住的地方 | 先读的例子 |
+|---|---|
+| 图片的 3 是颜色、图像数量，还是类别数？ | [单元 01：图像与分数](beginner/01-data-and-prediction.md) |
+| 负梯度为什么使权重增加？偏置也要更新吗？ | [单元 02：一个权重与多个参数](beginner/02-learning-and-gradients.md) |
+| 为什么梯度公式有转置，偏置为什么求和？ | [单元 03：两个样本的矩阵反传](beginner/03-networks-and-backprop.md) |
+| 16 个通道从哪里来，P=1 为什么不缩小？ | [单元 04：卷积窗口](beginner/04-convolution.md) |
+| 16×16×16 的三个 16 是什么？GAP 与展平一样吗？ | [单元 05：完整 CNN](beginner/05-pooling-and-cnn.md) |
+| Dropout 为什么把留下的值放大？BN 为什么分模式？ | [单元 06：稳定训练](beginner/06-training.md) |
+| 注意力权重到底乘谁？token 怎样变成图片特征？ | [单元 07：完整 QKV 手算](beginner/07-attention.md) |
+| 分类、检测、分割有什么区别？ | [单元 08：输出与标签](beginner/08-visual-tasks.md) |
+| 没标签怎么有损失？生成时知道真实图片吗？ | [单元 09：训练与生成分开看](beginner/09-self-supervision-and-generation.md) |
+| 视频、三维、语言、机器人怎样连起来？ | [单元 10：完整地图](beginner/10-bigger-picture.md) |
 
 ## 1. 先建立训练的完整链条
 
